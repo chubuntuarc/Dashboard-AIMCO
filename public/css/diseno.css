@@ -1,0 +1,43 @@
+/*Stylesheet con diseños adicionales para formato de la web*/
+/*------------------------------------------------------------------------------Index*/
+/*Diseño del index*/
+.activo { color:#B71C1C; }
+body{ background-color: #e0e0e0; }
+#big2 {background-color: white;};
+header a:hover:not(.activo) { color: #B71C1C; }
+#aimco{position: relative; left: 18%; top: 10px; font-size: 20px;}
+header{ background-color: #e0e0e0; box-shadow: 2px 2px 2px gray; color: #212121; height: 25px; position: fixed; top: auto; width: 100%; z-index: 1999;}
+header li { float: left; }
+header li a { display: block; color: #212121; font-size: 13px; text-align: center; padding: 0px 16px; text-decoration: none; }
+header ul { list-style-type: none; margin-left: 15%; margin-top: 3px; padding: 0; overflow: hidden; }
+#logo { height: 25px; left: 17%; position: relative; top: 18px; width: 70px; z-index: 998;}
+#logo_tarjeta1 {height: 30%; width: 30%; position: relative; left: 20%;}
+#logo_tarjeta2 {height: 60%; width: 100%; position: relative;}
+#logo_tarjeta3 {height: 15%; width: 80%; position: relative; left: 10%;}
+.slider{background-color: #212121;}
+.slider img{width: 60%; height: 100%; margin-left: 20%;}
+.slider2 img{width: 60%; height: 100%; margin-left: 20%;}
+#titulo_pagina{position: fixed; top: 0; z-index: 997; display: block;}
+
+/*Ocultar elementos en pantallas de 5.5 Pulgadas como LG G3 Stylus*/
+@media only screen and (max-width: 479px)
+{ #ocultar, #logo { display:none!important; }
+  #aimco{position: relative; left: 15%; top: 10px; font-size: 20px;}
+  header ul { list-style-type: none; margin-left: 5%; margin-top: 3px; padding: 0; overflow: hidden; }
+  .slider{height: 10%;}
+  .slider img{width: 60%; height: 80%;}
+}
+/*------------------------------------------------------------------------------Index*/
+
+/*------------------------------------------------------------------------------Dashboard*/
+/*Diseño de la Gráfica*/
+#campos_facturacion, #campos_ordenes, #campos_ofertas, #campos_back_order, #campos_facturacion_anterior, #campos_facturacion_anterior2, #campos_facturacion_anterior3, #facturas2015, #facturas2016
+,#facturas2014, #facturas2013, #houdini
+{
+	display: none;
+}
+
+#canvas {position: relative; width: 80%;}
+/*------------------------------------------------------------------------------Dashboard*/
+
+#boton{ position: relative; right: -15%;}
